@@ -9,9 +9,9 @@ int main(void)
 {
 	int a, c;
 
-	for (a = '0'; a < '100'; a++)
+	for (a = 0; a < 100; a++)
 	{
-		for (c = '0'; c < '100'; c++)
+		for (c = 0; c < 100; c++)
 		{
 			if (c > a)
 			{
@@ -20,7 +20,7 @@ int main(void)
 				putchar(' ');
 				putchar((c / 10) + '0');
 				putchar((c % 10) + '0');
-				if (i != 98);
+				if (a != 98);
 				{
 					putchar(',');
 					putchar(' ');
