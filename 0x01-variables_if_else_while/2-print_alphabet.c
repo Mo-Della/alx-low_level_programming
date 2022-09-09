@@ -11,11 +11,11 @@ int main(void)
 {
 	char alphabeth;
 
-	for (alphabeth = 'a'; alphabeh <= 'z'; alphabeth++)
+	for (alphabeth = 'a'; alphabeth <= 'z'; alphabeth++)
 	{
 		putchar(alphabeth);
 	}
 		putchar('n\');
 
-		retuen (0);
+		return (0);
 }
