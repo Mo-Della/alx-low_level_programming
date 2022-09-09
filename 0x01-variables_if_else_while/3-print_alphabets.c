@@ -6,6 +6,8 @@
  * Return: Always 0 (Success)                                                                                                
  */
 
+int main(void)
+
 {
 	char upper_case;
 	char lower_case;
