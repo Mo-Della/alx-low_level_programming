@@ -19,5 +19,7 @@ int main(void)
 
 		putchar (alphabeth);
 	}
+
+	putchar ('\n');
 	return (0);
 }
