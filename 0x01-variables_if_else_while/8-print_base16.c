@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char i;
+	multichar i;
 
 	for (i = '0'; i <= '16'; i++)
 	{
