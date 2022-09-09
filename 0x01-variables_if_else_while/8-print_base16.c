@@ -7,14 +7,9 @@
 
 int main(void)
 {
-	multichar i;
+	char i;
 
 	for (i = '0'; i <= '16'; i++)
-	{
-		putchar(i);
-	}
-	
-	for (i = 'a'; i <= 'f'; i++)
 	{
 		putchar(i);
 	}
