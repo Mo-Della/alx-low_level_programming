@@ -1,4 +1,4 @@
-#include <stdio.h
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -14,10 +14,10 @@ int main(void)
 		if (alphabeth == 'q')
 			continue;
 
-		else (alphabeth == 'e')
+		else if (alphabeth == 'e')
 			continue;
 
 		putchar (alphabeth);
 	}
-	return (0)
+	return (0);
 }
