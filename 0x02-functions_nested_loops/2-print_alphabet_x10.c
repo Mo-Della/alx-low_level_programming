@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print alpahabet_x10 - Make alphabet x10
  *
  * Return: Always 0
  */
