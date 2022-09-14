@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints the sum of all multiples of 3 or 5 up to 102
+ * main - print_times_table
  * Return: 0
  */
 
