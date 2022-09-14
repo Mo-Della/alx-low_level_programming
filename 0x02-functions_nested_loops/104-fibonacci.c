@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * num length - returns the length of string
+ * numLength - returns the length of string
  * @num: operand number
  * Return: number of digits
  */
@@ -48,7 +48,7 @@ int main(void)
 		f10 = f20;
 		f2 = tmp;
 		f20 = tmpo;
-		
+
 		if (i != 98)
 			printf(",");
 		else
