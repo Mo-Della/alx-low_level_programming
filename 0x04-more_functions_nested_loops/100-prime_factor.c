@@ -2,31 +2,45 @@
 
 /**
  * main - prints the largest prime factor
- *
- * Return: 0
  */
 
 int main(void)
 {
-	long number = 612852475143; div
+	int i, j, isPrime;
+	long int num;
+	/* Input a number from user */
 
-	while (div < number / 2)
-	{
-		if (number % inc == 0)
-		{
-			number /= 2;
-			continue;
-		}
+	 num = 612852475143;
 
-		for (div = 3; div < (number / 2); div += 2)
-		{
-			if (number % div == 0)
-			{
-				number /= div;
-			}
-		}
+	 printf("All Prime Factors of %ld are: \n", num);
 
-	}
-	printf("%ld\n", number);
-	return (0);
+	 /* Find all Prime factors */
+	 for (i = 2; i <= num; i++)
+	 {
+
+		 /* Check 'i' for factor of num */
+		 if (num % i == 0)
+
+		 {
+			 /* Check 'i' for Prime */
+			 isPrime = 1;
+			 for (j = 2; j <= i / 2; j++)
+
+			 {
+				 if (i % j == 0)
+				 {
+					 isPrime = 0;
+					 break;
+				 }
+			 }
+
+			 /* If 'i' is Prime number and factor of num */
+			 if (isPrime == 1)
+			 {
+				 printf("%d, ", i);
+			 }
+		 }
+	 }
+
+	 return (0);
 }
