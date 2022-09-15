@@ -1,7 +1,7 @@
 #ifndef MAIN_H
 #define MAIN_H
 /**
- * main- header file for prototypes
+ * main - header file for prototypes
  * void prototypes (void)
  * int prototypes (int)
  */
@@ -17,6 +17,6 @@ void print_number(int n);
 int _putchar(char);
 int _isupper(int c);
 int _isdigit(int c);
-int mul(int a, int b);int mul(int a, int b);
+int mul(int a, int b);
 
 #endif /* MAIN_H */
