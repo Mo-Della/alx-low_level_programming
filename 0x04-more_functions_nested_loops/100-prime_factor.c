@@ -8,10 +8,9 @@
 
 int main(void)
 {
-	long number = 612852475143;
-	int inc;
+	long number = 612852475143; div
 
-	while (inc++ < number / 2)
+	while (div < number / 2)
 	{
 		if (number % inc == 0)
 		{
@@ -19,10 +18,12 @@ int main(void)
 			continue;
 		}
 
-		for (inc = 3; inc < number / 2; inc += 2)
+		for (div = 3; div < (number / 2); div += 2)
 		{
-			if (num % inc == 0)
-				number /= inc;
+			if (number % div == 0)
+			{
+				number /= div;
+			}
 		}
 
 	}
