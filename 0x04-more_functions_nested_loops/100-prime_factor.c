@@ -2,6 +2,7 @@
 
 /**
  * main - prints the largest prime factor
+ * Return: 0
  */
 
 int main(void)
@@ -14,15 +15,15 @@ int main(void)
 
 	 printf("All Prime Factors of %ld are: \n", num);
 
-	 /* Find all Prime factors */
+	 /*Find all Prime factors*/
 	 for (i = 2; i <= num; i++)
 	 {
 
-		 /* Check 'i' for factor of num */
+		 /*Check 'i' for factor of num */
 		 if (num % i == 0)
 
 		 {
-			 /* Check 'i' for Prime */
+			 /*Check 'i' for Prime */
 			 isPrime = 1;
 			 for (j = 2; j <= i / 2; j++)
 
@@ -34,7 +35,7 @@ int main(void)
 				 }
 			 }
 
-			 /* If 'i' is Prime number and factor of num */
+			 /*If 'i' is Prime number and factor of num */
 			 if (isPrime == 1)
 			 {
 				 printf("%d, ", i);
