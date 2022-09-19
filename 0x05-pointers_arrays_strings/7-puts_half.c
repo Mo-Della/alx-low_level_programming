@@ -1,0 +1,40 @@
+#include "main.h"
+#include <string.h>
+#include <stdio.h>
+
+/**
+ * puts_half - function that prints half of a string
+ * @str: integer
+ * Return: 0
+ */
+void puts_half(char *str)
+{
+	int i = 0;
+	int a;
+
+	while (str[i] != '\0')
+	{
+		i++;
+	}
+	if (i % 2 == 1)
+	{
+		a = (i + 1) / 2;
+		while (str[a] != '\0')
+		{
+			putchar(str[a]);
+			a++;
+		}
+	}
+
+	else
+	{
+		a = (i / 2);
+		while (str[a] != '\0')
+		{
+			putchar(str[a]);
+			a++;
+		}
+	}
+	putchar('\n');
+}
+
