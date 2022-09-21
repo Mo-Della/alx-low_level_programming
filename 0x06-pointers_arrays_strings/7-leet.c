@@ -8,7 +8,7 @@
  * @n: variable
  * Return: return
  */
-char *leet(char *)
+char *leet(char *n)
 {
 	int i;
 	int a;
