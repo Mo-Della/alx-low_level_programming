@@ -8,7 +8,7 @@
  * @n: variable
  * Return: return
  */
-char *cap_string(char *)
+char *cap_string(char *n)
 {
 	int i = 0;
 
