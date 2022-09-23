@@ -1,26 +1,29 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * _strcat - check the code
  * @dest: variable
  * @src: variable
- * Return: concatenated string
+ * Return: dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	int i, a;
+	int i, j;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	i = 0;
+	while (dest[i] != '\0')
 	{
-		continue;
-	}
-	for (a = 0; src[a] != '\0'; a++)
-	{
-		dest[i] += src[a];
 		i++;
 	}
-	dest += '\0';
+
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		j++;
+		i++;
+	}
+	dest[i] = '\0';
 	return (dest);
 }
