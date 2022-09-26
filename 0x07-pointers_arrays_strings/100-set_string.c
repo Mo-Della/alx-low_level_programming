@@ -2,8 +2,8 @@
 
 /**
  * set_string - Description
- * @s - pointer
- * @to - char
+ * @s - the pointer
+ * @to - the char
  */
 void set_string(char **s, char *to)
 {
