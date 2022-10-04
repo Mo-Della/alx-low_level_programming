@@ -49,3 +49,4 @@ for (i = 0; i < ac; i++)
 s[cmpt] = '\0';
 
 return (s);
+}
