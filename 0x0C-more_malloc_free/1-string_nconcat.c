@@ -3,45 +3,38 @@
 
 /**
  * *string_nconcat - concatenates two strings
- * @s1: string 1
- * @s2: string 2
- * @n: first bytes of s2 to be used
- * Return: pointer or NULL
+ * @s1: first string
+ * @s2: second string
+ * @n: limit of s2
+ * Return: pointer to new space in memory or null
  */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	unsigned int i, j k;
-	char *s;
+	char *strDup;
+	int i;
+	unsigned int j;
 
 	if (s1 == NULL)
-		i = 0;
-	else
-	{
-		for (i = 0; s1[i]; i++)
-			;
-	}
+		s1 = "";
 	if (s2 == NULL)
-		j = 0;
-	else
-	{
-		for (j = 0; s2[j]; j++)
-			;
-	}
-	if (j > n)
-		j = n;
-	s = malloc(sizeof(char) * (i + j + 1));
-	if (s == NULL)
+		s2 = "";
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+	strDup = malloc(sizeof(char) * (i + n + 1));
+	if (strDup == NULL)
 		return (NULL);
-	for (k = 0; k < i; k++)
+	i = j = 0;
+	while (s1[i] != '\0')
 	{
-		s[k] = s1[k];
+		strDup[i] = s1[i];
+		i++;
 	}
-
-	for (k = 0; k < j; k++)
+	while (j < n && s2[j] != '\0')
 	{
-		s[k + i] = s2[k];
+		strDup[i] = s2[j];
+		i++, j++;
 	}
-	s[1 + j] = '\0';
-	return (s);
+	strDup[i] = '\0';
+	return (strDup);
 }
